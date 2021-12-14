@@ -1,4 +1,6 @@
 language: bash
 
-script:
-  - wc -l README.md
+jobs:
+  include:
+    - stage: test
+      script: wc -l README.md
